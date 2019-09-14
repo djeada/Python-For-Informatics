@@ -23,9 +23,8 @@ Run the program repeatedly as shown above to test the various
 different values for input. 
 '''
 while True:
-    score = input('Enter score: ')
+    score = float(input('Enter score: '))
     try:
-        score = float(score)
         if score < 0.6 and score > 0:
             print('F')
         elif score >= 0.6 and score < 0.7:
