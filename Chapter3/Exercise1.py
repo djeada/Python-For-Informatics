@@ -9,11 +9,10 @@ Pay: 475.0
 
 hours = float(input('Enter Hours: '))
 rate = float(input('Enter Rate: '))
-OVERTIME_RATE = 1.5
 
 def calculate_pay(hours, rate):
     if hours > 40:
-        result = (40 * rate) + (hours - 40)* rate * OVERTIME_RATE
+        result = (40 * rate) + (hours - 40)* rate * 1.5
     else:
         result = (hours * rate)
     return 'Pay: ' + str(result)

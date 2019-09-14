@@ -20,7 +20,7 @@ except:
     
 def calculate_pay(hours, rate):
     if hours > 40:
-        result = (40 * rate) + (hours - 40)* rate * 15
+        result = (40 * rate) + (hours - 40)* rate * 1.5
     else:
         result = (hours * rate)
     return 'Pay: ' + str(result)
