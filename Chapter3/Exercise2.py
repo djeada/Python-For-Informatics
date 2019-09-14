@@ -19,7 +19,6 @@ except:
     sys.exit(1)
     
 def calculate_pay(hours, rate):
-    overtime_pay = 0
     if hours > 40:
         result = (40 * rate) + (hours - 40)* rate * 15
     else:
