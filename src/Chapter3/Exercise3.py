@@ -1,4 +1,4 @@
-'''
+"""
 Exercise 3
 Write a program to prompt for a score between 0.0 and 1.0. If the
 score is out of range print(an error. If the score is between 0.0 and
@@ -21,22 +21,22 @@ Enter score: 0.5
 F
 Run the program repeatedly as shown above to test the various
 different values for input. 
-'''
+"""
 while True:
-    score = float(input('Enter score: '))
+    score = float(input("Enter score: "))
     try:
         if score < 0.6 and score > 0:
-            print('F')
+            print("F")
         elif score >= 0.6 and score < 0.7:
-            print('D')
+            print("D")
         elif score >= 0.7 and score < 0.8:
-            print('C')
+            print("C")
         elif score >= 0.8 and score < 0.9:
-            print('B')
+            print("B")
         elif score >= 0.9 and score < 1:
-            print('A')
+            print("A")
         else:
-            print('Bad score, continuing.')
+            print("Bad score, continuing.")
     except:
-        print('Bad score, exiting.')
+        print("Bad score, exiting.")
         break

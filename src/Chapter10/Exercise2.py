@@ -1,4 +1,4 @@
-'''
+"""
 Exercise 2  
 This program counts the distribution of the hour of the day for each of the
 messages. You can pull the hour from the "From" line by finding the time
@@ -20,14 +20,16 @@ Enter a file name: mbox-short.txt
 17 2
 18 1
 19 1
-'''
+"""
 
-file = open('mbox-short.txt')
+file = open("mbox-short.txt")
 lines = [line.strip("\n") for line in file if line.startswith("From ")]
 dictionary = {}
 
 for line in lines:
-    dictionary[line.split()[5].split(":")[0]] = dictionary.get(line.split()[5].split(":")[0], 0) + 1
+    dictionary[line.split()[5].split(":")[0]] = (
+        dictionary.get(line.split()[5].split(":")[0], 0) + 1
+    )
 
 list_of_tuples = [(dictionary[key], key) for key in dictionary]
 

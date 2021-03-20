@@ -1,4 +1,4 @@
-'''
+"""
 Exercise 1  
 Revise a previous program as follows: Read and parse the "From" lines and
 pull out the addresses from the line. Count the number of messages from
@@ -12,9 +12,9 @@ Enter a file name: mbox-short.txt
 cwen@iupui.edu 5
 Enter a file name: mbox.txt
 zqian@umich.edu 195
-'''
+"""
 
-file = open('mbox-short.txt')
+file = open("mbox-short.txt")
 lines = [line.strip("\n") for line in file if line.startswith("From ")]
 dictionary = {}
 
@@ -23,5 +23,7 @@ for line in lines:
 
 list_of_tuples = [(dictionary[key], key) for key in dictionary]
 
-print(sorted(list_of_tuples, reverse=True)[0][1],sorted(list_of_tuples, reverse=True)[0][0])
-
+print(
+    sorted(list_of_tuples, reverse=True)[0][1],
+    sorted(list_of_tuples, reverse=True)[0][0],
+)

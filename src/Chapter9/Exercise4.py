@@ -1,4 +1,4 @@
-'''
+"""
 Exercise 4
 Add code to the above program to figure out who has the most messages in the
 file.
@@ -9,10 +9,10 @@ Enter a file name: mbox-short.txt
 cwen@iupui.edu 5
 Enter a file name: mbox.txt
 zqian@umich.edu 195
-'''
+"""
 
-file = open('mbox-short.txt')
-lines = [line.strip('\n') for line in file if line.startswith('From ')]
+file = open("mbox-short.txt")
+lines = [line.strip("\n") for line in file if line.startswith("From ")]
 dictionary = {}
 
 for line in lines:

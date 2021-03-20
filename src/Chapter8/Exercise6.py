@@ -1,4 +1,4 @@
-'''
+"""
 Exercise 6
 Rewrite the program that prompts the user for a list of numbers and prints
 out the maximum and minimum of the numbers at the end when the user enters
@@ -13,16 +13,16 @@ Enter a number: 5
 Enter a number: done
 Maximum: 9.0
 Minimum: 2.0
-'''
+"""
 
 
 list_num = []
 while True:
-        answer = input('Enter a number: ')
-        if answer == 'done':
-            break
-        else:
-            list_num.append(int(answer))
+    answer = input("Enter a number: ")
+    if answer == "done":
+        break
+    else:
+        list_num.append(int(answer))
 
-print('Maximum: ', max(list_num))
-print('Minimum: ', min(list_num))
+print("Maximum: ", max(list_num))
+print("Minimum: ", min(list_num))

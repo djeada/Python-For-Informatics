@@ -1,4 +1,4 @@
-'''
+"""
 Exercise 3
 word = 'banana'
 count = 0
@@ -8,9 +8,10 @@ for letter in word:
 print count
 Encapsulate this code in a function named count, and generalize it so that it
 accepts the string and the letter as arguments.
-'''
+"""
 
-word = 'banana'
+word = "banana"
+
 
 def count(word, target):
     count = 0
@@ -19,6 +20,5 @@ def count(word, target):
             count += 1
     print(count)
 
-count(word, 'a')
 
-
+count(word, "a")

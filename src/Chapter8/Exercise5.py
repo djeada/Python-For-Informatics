@@ -1,4 +1,4 @@
-'''
+"""
 Exercise 5
 Write a program to read through the mail box data and when you find line that
 starts with "From", you will split the line into words using the split
@@ -20,13 +20,17 @@ cwen@iupui.edu
 cwen@iupui.edu
 cwen@iupui.edu
 There were 27 lines in the file with From as the first word
-'''
+"""
 
-file_name = open('mbox-short.txt')
-lines = [line.strip("\n") for line in file_name if line.startswith("From") and not line.startswith("From:")]
+file_name = open("mbox-short.txt")
+lines = [
+    line.strip("\n")
+    for line in file_name
+    if line.startswith("From") and not line.startswith("From:")
+]
 count = 0
 for line in lines:
     words = line.split()
     print(words[1])
     count += 1
-print('There were %d lines in the file with From as the first word' % count)
+print("There were %d lines in the file with From as the first word" % count)

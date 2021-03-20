@@ -1,4 +1,4 @@
-'''
+"""
 Exercise 1  
 Write a program which repeatedly reads numbers until the user enters
 'done'. Once 'done' is entered, print out the total, count, and average
@@ -12,19 +12,18 @@ Invalid input
 Enter a number: 7
 Enter a number: done
 16 3 5.33333333333
-'''
+"""
 total = 0
 count = 0
 while True:
-    num = input('Enter a number: ')
-    if num == 'done':
+    num = input("Enter a number: ")
+    if num == "done":
         print(total, count, (total / count))
         break
     else:
         try:
             total += float(num)
         except:
-            print('Invalid input')
+            print("Invalid input")
             continue
     count += 1
-        

@@ -1,4 +1,4 @@
-'''
+"""
 Exercise 2  
 Write a program that categorizes each mail message by which day of the week
 the commit was done. To do this look for lines which start with "From", then
@@ -11,10 +11,10 @@ Sample Execution:
 python dow.py
 Enter a file name: mbox-short.txt
 {'Fri': 20, 'Thu': 6, 'Sat': 1}
-'''
+"""
 
-file = open('mbox-short.txt')
-lines = [line.strip('\n') for line in file if line.startswith('From ')]
+file = open("mbox-short.txt")
+lines = [line.strip("\n") for line in file if line.startswith("From ")]
 dictionary = {}
 
 for line in lines:

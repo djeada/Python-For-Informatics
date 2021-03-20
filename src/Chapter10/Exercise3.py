@@ -1,4 +1,4 @@
-'''
+"""
 Exercise 3
 Write a program that reads a file and prints the letters in decreasing order
 of frequency. Your program should convert all the input to lower case and
@@ -7,10 +7,10 @@ punctuation or anything other than the letters a-z. Find text samples from
 several different languages and see how letter frequency varies between
 languages. Compare your results with the tables at
 wikipedia.org/wiki/Letter_frequencies.
-'''
+"""
 
 
-file = open('mbox-short.txt')
+file = open("mbox-short.txt")
 lines = [line.strip("\n") for line in file]
 dictionary = {}
 
@@ -27,5 +27,3 @@ list_of_tuples = [(dictionary[key], key) for key in dictionary]
 
 for item in sorted(list_of_tuples, reverse=True):
     print(item[1], item[0])
-
-

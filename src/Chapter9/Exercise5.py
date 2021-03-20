@@ -1,4 +1,4 @@
-'''
+"""
 Exercise 5
 This program records the domain name (instead of the address) where the
 message was sent from instead of who the mail came from (i.e. the whole
@@ -8,10 +8,14 @@ python schoolcount.py
 Enter a file name: mbox-short.txt
 {'media.berkeley.edu': 4, 'uct.ac.za': 6, 'umich.edu': 7,
 'gmail.com': 1, 'caret.cam.ac.uk': 1, 'iupui.edu': 8}
-'''
+"""
 
-file_name = open('mbox-short.txt')
-lines = [line.strip("\n") for line in file_name if line.startswith("From") and not line.startswith("From:")]
+file_name = open("mbox-short.txt")
+lines = [
+    line.strip("\n")
+    for line in file_name
+    if line.startswith("From") and not line.startswith("From:")
+]
 dictionary = {}
 
 for line in lines:
