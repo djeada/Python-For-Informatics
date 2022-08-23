@@ -1,6 +1,8 @@
 # Python-For-Informatics
 My solutions to problems from Charles Severance's book "Python for informatics"
 
+![Capture](https://user-images.githubusercontent.com/37275728/186221776-25452003-c0fa-4d67-a21d-263cbd8740a8.PNG)
+
 <h1>Chapter 3</h1>
 
 <table>
